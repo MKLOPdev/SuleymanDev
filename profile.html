@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+       .container {
+           border: 2px solid #40e0ff;
+           padding: 13px;
+           border-radius: 10px;
+           height: auto;
+           width: auto;
+           padding-top: 4px;
+           
+       }
+      div > img {
+          border: 2px solid #40e0ff;
+          border-radius: 5px;
+          width: 270px;
+          background: white;
+      }
+      div > h4 {
+          color: #40e0ff;
+          font-weight: bold;
+          margin-bottom: 2px;
+          margin-top: 8px; 
+      }
+      div > img:hover {
+          
+      }
+      @keyframes animation {
+          1% {
+              color: #40e0ff;
+          }
+          25% {
+              color: #40ff63;
+          }
+          50% {
+              color: #ff7e40;
+          }
+          75% {
+              color: #f855ff;
+          }
+          100% {
+              #4063ff
+          }
+      }
+      div > p > span {
+          animation: animation;
+          animation-duration: 10s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+      } 
+      div > p {
+          color: gray;
+          font-weight: bolder;
+          font-size: 15px;
+          max-width: 250px; 
+      }
+      div > button {
+          height: 44px;
+          width: 130px;
+          border: 2px solid #40e0ff ;
+          background: #40e0ff;
+          border-radius: 20px;
+          font-weight: bold;
+          color: white;
+          font-size: 13px;
+          transition: background 1s, color 0.7s;
+      }
+      div > a > .download {
+          background: #40e0ff;
+          display: inline-block;
+          border-radius: 22px;
+          border: 2px solid #40e0ff;
+          font-weight: bold;
+          font-size: 13px;
+          color: white;
+          height: 44px;
+          width: 130px;
+          transition: background 1s, color 0.7s;
+      }
+      div > a > button:hover {
+          background: white;
+          color: #40e0ff;
+      }
+      div > a > button {
+          border: 2px solid red;
+          background: white;
+          color: red;
+          font-weight: bold;
+          font-size: 13px;
+          border-radius: 22px;
+          height: 44px;
+          width: 130px;
+          transition: background 1s, color 0.7s;
+      }
+      div > a > button {
+          color: white;
+          background: red;
+      }
+    </style>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h4>Suleyman Muktar Duruy </h4><hr>
+        <img src="UnknownDev.png" alt=""></img>
+        <h3>Hey Yo Guys </h3>
+        <p>I'm <span>Suleyman Muktar Duruy</span>, Known As Mustofa<br> I'm Currently Learning in Abala High school (9<sup>th</sup>B Grade). <br>
+        I'm a Full-stack Web Developer, means I can Develop Websites With Database Access and Advanced Design as well as Web Scripts Using <u>Python</u> and <u>JavaScript</u></p>
+        <a href="" download="UnknownDev.png"><button class="download"onclick="alert('The Picture Downloaded Successfully!!!')">Download Pic</button></a>
+        <a href="index.html"><button>Back To Home</button></a>
+    </div>
+    
+</body>
+</html>
