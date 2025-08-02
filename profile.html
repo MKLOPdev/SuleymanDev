@@ -1,122 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-       body {
-           font-family: monospace;
-       .container {
-           border: 2px solid #40e0ff;
-           padding: 13px;
-           border-radius: 10px;
-           height: auto;
-           width: auto;
-           padding-top: 4px;
-           
-       }
-      div > img {
-          border: 2px solid #40e0ff;
-          border-radius: 5px;
-          width: 260px;
-          background: white;
-      }
-      div > h2 {
-          color: #40e0ff;
-          font-weight: bold;
-          margin-bottom: 2px;
-          margin-top: 8px; 
-      }
-      div > img:hover {
-          
-      }
-      @keyframes animation {
-          1% {
-              color: #40e0ff;
-          }
-          25% {
-              color: #40ff63;
-          }
-          50% {
-              color: #ff7e40;
-          }
-          75% {
-              color: #f855ff;
-          }
-          100% {
-              #4063ff
-          }
-      }
-      div > p > span {
-          animation: animation;
-          animation-duration: 10s;
-          animation-iteration-count: infinite;
-          animation-direction: alternate;
-      } 
-      div > p {
-          color: gray;
-          font-weight: bolder;
-          font-size: 25px;
-          max-width: 500px; 
-      }
-      div > button {
-          height: 44px;
-          width: 130px;
-          border: 2px solid #40e0ff ;
-          background: #40e0ff;
-          border-radius: 20px;
-          font-weight: bold;
-          color: white;
-          font-size: 13px;
-          transition: background 1s, color 0.7s;
-      }
-      div > a > .download {
-          background: #40e0ff;
-          display: inline-block;
-          border-radius: 22px;
-          border: 2px solid #40e0ff;
-          font-weight: bold;
-          font-size: 13px;
-          color: white;
-          height: 44px;
-          width: 130px;
-          transition: background 1s, color 0.7s;
-      }
-      div > a > button:hover {
-          background: white;
-          color: #40e0ff;
-      }
-      div > a > button {
-          border: 2px solid red;
-          background: white;
-          color: red;
-          font-weight: bold;
-          font-size: 13px;
-          border-radius: 22px;
-          height: 44px;
-          width: 130px;
-          transition: background 1s, color 0.7s;
-      }
-      div > a > button {
-          color: white;
-          background: red;
-      }
-    </style>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suleyman's Profile</title>
+
+    <!-- Font Awesome CDN for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: monospace;
+            background-color: #f7f9fb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .container {
+            border: 2px solid #40e0ff;
+            padding: 20px;
+            border-radius: 15px;
+            background: #fff;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        img {
+            border: 2px solid #40e0ff;
+            border-radius: 10px;
+            width: 260px;
+            background: white;
+            transition: transform 0.4s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #40e0ff;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        p {
+            color: gray;
+            font-weight: bolder;
+            font-size: 20px;
+            max-width: 500px;
+            margin: 10px auto;
+        }
+
+        p span {
+            animation: colorAnimation 10s infinite alternate;
+        }
+
+        @keyframes colorAnimation {
+            0%   { color: #40e0ff; }
+            25%  { color: #40ff63; }
+            50%  { color: #ff7e40; }
+            75%  { color: #f855ff; }
+            100% { color: #4063ff; }
+        }
+
+        .download, .back, .social-btn {
+            height: 44px;
+            width: 130px;
+            border-radius: 22px;
+            font-weight: bold;
+            font-size: 13px;
+            cursor: pointer;
+            margin: 5px;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .download {
+            background: #40e0ff;
+            color: white;
+            border: 2px solid #40e0ff;
+        }
+
+        .download:hover {
+            background: white;
+            color: #40e0ff;
+        }
+
+        .back {
+            background: red;
+            color: white;
+            border: 2px solid red;
+        }
+
+        .back:hover {
+            background: white;
+            color: red;
+        }
+
+        .socials {
+            margin-top: 20px;
+        }
+
+        .social-btn {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: none;
+            font-size: 20px;
+            color: white;
+        }
+
+        .social-btn:hover {
+            transform: scale(1.2);
+        }
+
+        .fa-youtube { background: #FF0000; }
+        .fa-telegram { background: #0088cc; }
+        .fa-github { background: #333; }
+        .fa-instagram { background: #E1306C; }
+    </style>
 </head>
 <body>
-    
-    <div class="container">
-        <h4>Suleyman Muktar Duruy </h4><hr>
-        <img src="UnknownDev.png" alt=""></img>
-        <h2>Hey Yo Guys </h2>
-        <p>I'm <span>Suleyman Muktar Duruy</span>, Known As Mustofa<br> I'm Currently Learning in Abala High school (9<sup>th</sup>B Grade). <br>
-        I'm a Full-stack Web Developer, means I can Develop Websites With Database Access and Advanced Design as well as Web Scripts Using <u>Python</u> and <u>JavaScript</u></p>
-        <a href="" download="UnknownDev.png"><button class="download"onclick="alert('The Picture Downloaded Successfully!!!')">Download Pic</button></a>
-        <a href="index.html"><button>Back To Home</button></a>
+
+<div class="container">
+    <h4>Suleyman Muktar Duruy</h4>
+    <hr>
+    <img src="UnknownDev.png" alt="Suleyman's Picture">
+    <h2>Hey Yo Guys 👋</h2>
+    <p>
+        I'm <span>Suleyman Muktar Duruy</span>, Known As Mustofa<br>
+        I'm Currently Learning in Abala High School (9<sup>th</sup> B Grade).<br>
+        I'm a Full-stack Web Developer — I build advanced websites & apps using <u>Python</u> & <u>JavaScript</u>! 🚀
+    </p>
+
+    <a href="UnknownDev.png" download>
+        <button class="download" onclick="alert('📥 Picture Downloaded Successfully!!!')">Download Pic</button>
+    </a>
+    <a href="index.html">
+        <button class="back">Back To Home</button>
+    </a>
+
+    <div class="socials">
+        <a href="https://t.me/YourTelegram" target="_blank">
+            <button class="social-btn fa-brands fa-telegram"></button>
+        </a>
+        <a href="https://github.com/YourGitHub" target="_blank">
+            <button class="social-btn fa-brands fa-github"></button>
+        </a>
+        <a href="https://www.instagram.com/YourInsta/" target="_blank">
+            <button class="social-btn fa-brands fa-instagram"></button>
+        </a>
+        <a href="https://youtube.com/@YourChannel" target="_blank">
+            <button class="social-btn fa-brands fa-youtube"></button>
+        </a>
     </div>
-    
+</div>
+
 </body>
 </html>
